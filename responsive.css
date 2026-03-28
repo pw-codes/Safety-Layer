@@ -1,0 +1,37 @@
+/* responsive.css — breakpoints & mobile overrides */
+
+/* ── Tablet (≤1024px) ── */
+@media (max-width: 1024px) {
+  .hero-diagram { width: 360px; }
+}
+
+/* ── Mobile (≤768px) ── */
+@media (max-width: 768px) {
+  .hero .container { flex-direction: column; }
+  .hero-diagram    { display: none; }
+
+  .split          { grid-template-columns: 1fr; }
+  .pricing-grid   { grid-template-columns: 1fr; }
+  .stats-inner    { grid-template-columns: repeat(2, 1fr); }
+
+  .arch-flow  { gap: 0.5rem; flex-direction: column; align-items: flex-start; }
+  .arch-arrow { display: none; }
+
+  .nav-links  { display: none; }
+
+  .timeline::before { left: 80px; }
+  .timeline-label   { width: 60px; }
+
+  .cta-btns { flex-direction: column; align-items: center; }
+
+  h1 { font-size: 2.4rem; }
+  .section-title { font-size: 1.8rem; }
+}
+
+/* ── Small mobile (≤480px) ── */
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .nav-inner { padding: 1rem; }
+  .features-grid { grid-template-columns: 1fr; }
+  .stack-grid    { grid-template-columns: 1fr; }
+}
