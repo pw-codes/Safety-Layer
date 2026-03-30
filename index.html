@@ -1,202 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SafeLayer — AI Safety & Monitoring Platform</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeLayer — AI Safety & Monitoring Platform</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- External CSS files -->
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-</head>
-<body>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- Background Effects -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
 
-  <!-- Background Effects -->
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner container">
+        <a class="logo" href="#">
+          <div class="logo-dot"></div>
+          SafeLayer
+        </a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <button class="nav-cta" id="earlyAccessBtn">Get Early Access</button>
+      </div>
+    </nav>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner container">
-      <a class="logo" href="#">
-        <div class="logo-dot"></div>
-        SafeLayer
-      </a>
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#architecture">Architecture</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-      </ul>
-      <button class="nav-cta" id="earlyAccessBtn">Get Early Access</button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="scanner-line"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-tag fade-up fade-up-d1">Real-time AI Safety Infrastructure</div>
-        <h1 class="fade-up fade-up-d2">Control your <em>AI outputs</em>.<br>Protect your users.</h1>
-        <p class="hero-sub fade-up fade-up-d3">
-          AI models generate incorrect, biased, and harmful outputs — and most companies have zero visibility into it.
-          SafeLayer monitors, scores, and filters AI responses in real-time before they ever reach your users.
-        </p>
-        <div class="hero-btns fade-up fade-up-d4">
-          <a href="#features" class="btn-primary">Explore Platform</a>
-          <a href="#stack" class="btn-secondary">100% Free Stack →</a>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="scanner-line"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-tag fade-up fade-up-d1">
+            Real-time AI Safety Infrastructure
+          </div>
+          <h1 class="fade-up fade-up-d2">
+            Control your <em>AI outputs</em>.<br />Protect your users.
+          </h1>
+          <p class="hero-sub fade-up fade-up-d3">
+            AI models generate incorrect, biased, and harmful outputs — and most
+            companies have zero visibility into it. SafeLayer monitors, scores,
+            and filters AI responses in real-time before they ever reach your
+            users.
+          </p>
+          <div class="hero-btns fade-up fade-up-d4">
+            <a href="#features" class="btn-primary">Explore Platform</a>
+            <a href="#stack" class="btn-secondary">100% Free Stack →</a>
+          </div>
+        </div>
+        <div class="hero-diagram" id="heroDiagram">
+          <!-- SVG injected by diagram.js -->
         </div>
       </div>
-      <div class="hero-diagram" id="heroDiagram">
-        <!-- SVG injected by diagram.js -->
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="stats-inner" id="statsGrid">
+          <!-- Populated by stats.js -->
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="container">
-      <div class="stats-inner" id="statsGrid">
-        <!-- Populated by stats.js -->
+    <!-- PROBLEM & SOLUTION -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-eyebrow">The Challenge</div>
+        <h2 class="section-title">
+          AI is powerful.<br />Uncontrolled AI is dangerous.
+        </h2>
+        <p class="section-sub">
+          The gap between AI capability and AI governance is widening. Most
+          businesses deploying AI have no safety layer between the model and
+          their users.
+        </p>
+        <div class="split" id="splitCards">
+          <!-- Populated by cards.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-eyebrow">Core Platform</div>
+        <h2 class="section-title">Five layers of protection</h2>
+        <p class="section-sub">
+          Every feature built to close the gap between raw AI outputs and
+          production-safe responses.
+        </p>
+        <div class="features-grid" id="featuresGrid">
+          <!-- Populated by cards.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <div class="section-eyebrow">System Design</div>
+        <h2 class="section-title">How data flows through SafeLayer</h2>
+        <p class="section-sub">
+          A simple, powerful pipeline. Every request is intercepted, processed,
+          and cleared before delivery.
+        </p>
+        <div class="arch-flow" id="archFlow">
+          <!-- Populated by architecture.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section" id="stack">
+      <div class="container">
+        <div class="section-eyebrow">Technology</div>
+        <h2 class="section-title">Built 100% on free tools</h2>
+        <p class="section-sub">
+          No vendor lock-in. No surprise bills. Every component is open-source
+          or free-tier — production-grade from day one.
+        </p>
+        <div class="stack-grid" id="stackGrid">
+          <!-- Populated by stack.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MVP TIMELINE -->
+    <section class="section" id="mvp">
+      <div class="container">
+        <div class="section-eyebrow">MVP Plan</div>
+        <h2 class="section-title">Ship in 2 weeks</h2>
+        <p class="section-sub">
+          A lean, focused build plan to get a production-ready MVP deployed on
+          free infrastructure.
+        </p>
+        <div class="timeline" id="timeline">
+          <!-- Populated by timeline.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-eyebrow">Business Model</div>
+        <h2 class="section-title">SaaS. Simple pricing.</h2>
+        <p class="section-sub">
+          Start free, scale as you grow. Every plan includes the core safety
+          engine.
+        </p>
+        <div class="pricing-grid" id="pricingGrid">
+          <!-- Populated by pricing.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <div class="section-eyebrow">Roadmap</div>
+        <h2 class="section-title">What's coming next</h2>
+        <div class="features-grid" id="roadmapGrid">
+          <!-- Populated by cards.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <h2>Start protecting your<br /><em>AI outputs</em> today.</h2>
+        <p>
+          Join the waitlist for early access. Deploy on free infrastructure in
+          under an hour.
+        </p>
+        <div class="cta-btns">
+          <a href="#" class="btn-primary" id="ctaMainBtn">Get Early Access</a>
+          <a href="#" class="btn-secondary">View on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        © 2025 SafeLayer — AI Safety &amp; Monitoring Platform &nbsp;·&nbsp;
+        Built on 100% free open-source technology &nbsp;·&nbsp; No vendor
+        lock-in
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box" id="modalBox">
+        <button class="modal-close" id="modalClose">✕</button>
+        <h3>Get Early Access</h3>
+        <p>Enter your email and we'll notify you when SafeLayer is ready.</p>
+        <div class="modal-form">
+          <input type="email" id="emailInput" placeholder="you@company.com" />
+          <button class="btn-primary" id="submitEmail">Notify Me</button>
+        </div>
+        <div id="modalMsg" class="modal-msg"></div>
       </div>
     </div>
-  </div>
 
-  <!-- PROBLEM & SOLUTION -->
-  <section class="section" id="problem">
-    <div class="container">
-      <div class="section-eyebrow">The Challenge</div>
-      <h2 class="section-title">AI is powerful.<br>Uncontrolled AI is dangerous.</h2>
-      <p class="section-sub">The gap between AI capability and AI governance is widening. Most businesses deploying AI have no safety layer between the model and their users.</p>
-      <div class="split" id="splitCards">
-        <!-- Populated by cards.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="section" id="features">
-    <div class="container">
-      <div class="section-eyebrow">Core Platform</div>
-      <h2 class="section-title">Five layers of protection</h2>
-      <p class="section-sub">Every feature built to close the gap between raw AI outputs and production-safe responses.</p>
-      <div class="features-grid" id="featuresGrid">
-        <!-- Populated by cards.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ARCHITECTURE -->
-  <section class="section" id="architecture">
-    <div class="container">
-      <div class="section-eyebrow">System Design</div>
-      <h2 class="section-title">How data flows through SafeLayer</h2>
-      <p class="section-sub">A simple, powerful pipeline. Every request is intercepted, processed, and cleared before delivery.</p>
-      <div class="arch-flow" id="archFlow">
-        <!-- Populated by architecture.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- TECH STACK -->
-  <section class="section" id="stack">
-    <div class="container">
-      <div class="section-eyebrow">Technology</div>
-      <h2 class="section-title">Built 100% on free tools</h2>
-      <p class="section-sub">No vendor lock-in. No surprise bills. Every component is open-source or free-tier — production-grade from day one.</p>
-      <div class="stack-grid" id="stackGrid">
-        <!-- Populated by stack.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- MVP TIMELINE -->
-  <section class="section" id="mvp">
-    <div class="container">
-      <div class="section-eyebrow">MVP Plan</div>
-      <h2 class="section-title">Ship in 2 weeks</h2>
-      <p class="section-sub">A lean, focused build plan to get a production-ready MVP deployed on free infrastructure.</p>
-      <div class="timeline" id="timeline">
-        <!-- Populated by timeline.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section class="section" id="pricing">
-    <div class="container">
-      <div class="section-eyebrow">Business Model</div>
-      <h2 class="section-title">SaaS. Simple pricing.</h2>
-      <p class="section-sub">Start free, scale as you grow. Every plan includes the core safety engine.</p>
-      <div class="pricing-grid" id="pricingGrid">
-        <!-- Populated by pricing.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ROADMAP -->
-  <section class="section" id="roadmap">
-    <div class="container">
-      <div class="section-eyebrow">Roadmap</div>
-      <h2 class="section-title">What's coming next</h2>
-      <div class="features-grid" id="roadmapGrid">
-        <!-- Populated by cards.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section" id="cta">
-    <div class="container">
-      <h2>Start protecting your<br><em>AI outputs</em> today.</h2>
-      <p>Join the waitlist for early access. Deploy on free infrastructure in under an hour.</p>
-      <div class="cta-btns">
-        <a href="#" class="btn-primary" id="ctaMainBtn">Get Early Access</a>
-        <a href="#" class="btn-secondary">View on GitHub →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div>© 2025 SafeLayer — AI Safety &amp; Monitoring Platform &nbsp;·&nbsp;
-      Built on 100% free open-source technology &nbsp;·&nbsp; No vendor lock-in
-    </div>
-  </footer>
-
-  <!-- Modal -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal-box" id="modalBox">
-      <button class="modal-close" id="modalClose">✕</button>
-      <h3>Get Early Access</h3>
-      <p>Enter your email and we'll notify you when SafeLayer is ready.</p>
-      <div class="modal-form">
-        <input type="email" id="emailInput" placeholder="you@company.com" />
-        <button class="btn-primary" id="submitEmail">Notify Me</button>
-      </div>
-      <div id="modalMsg" class="modal-msg"></div>
-    </div>
-  </div>
-
-  <!-- JS Modules (order matters) -->
-  <script src="js/data.js"></script>
-  <script src="js/diagram.js"></script>
-  <script src="js/stats.js"></script>
-  <script src="js/cards.js"></script>
-  <script src="js/architecture.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/timeline.js"></script>
-  <script src="js/pricing.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <!-- JS Modules (order matters) -->
+    <script src="data.js"></script>
+    <script src="diagram.js"></script>
+    <script src="stats.js"></script>
+    <script src="cards.js"></script>
+    <script src="architecture.js"></script>
+    <script src="stack.js"></script>
+    <script src="timeline.js"></script>
+    <script src="pricing.js"></script>
+    <script src="modal.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
