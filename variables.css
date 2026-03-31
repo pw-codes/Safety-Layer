@@ -1,26 +1,26 @@
 /* variables.css — design tokens & theme */
 :root {
   /* Colors */
-  --bg:       #060a0f;
-  --surface:  #0d1520;
-  --border:   #1a2a3a;
-  --accent:   #00e5ff;
-  --accent2:  #ff4d6d;
-  --accent3:  #39ff14;
-  --text:     #e8f0fe;
-  --muted:    #6b88a4;
-  --card:     #0f1e2e;
+  --bg: #060a0f;
+  --surface: #0d1520;
+  --border: #1a2a3a;
+  --accent: #00e5ff;
+  --accent2: #ff4d6d;
+  --accent3: #39ff14;
+  --text: #e8f0fe;
+  --muted: #6b88a4;
+  --card: #0f1e2e;
 
   /* Typography */
-  --font-display: 'Syne', sans-serif;
-  --font-mono:    'Space Mono', monospace;
+  --font-display: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
   /* Spacing scale */
-  --space-xs:  0.4rem;
-  --space-sm:  0.8rem;
-  --space-md:  1.5rem;
-  --space-lg:  2.5rem;
-  --space-xl:  4rem;
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
   --space-2xl: 6rem;
 
   /* Border radius */
@@ -28,16 +28,16 @@
   --radius-md: 6px;
 
   /* Shadows */
-  --shadow-accent:  0 0 12px var(--accent);
+  --shadow-accent: 0 0 12px var(--accent);
   --shadow-accent3: 0 0 12px var(--accent3);
 
   /* Transitions */
   --transition-fast: 0.2s ease;
-  --transition-med:  0.3s ease;
+  --transition-med: 0.3s ease;
 
   /* Z-index layers */
-  --z-bg:     0;
-  --z-base:   1;
-  --z-nav:    100;
-  --z-modal:  200;
+  --z-bg: 0;
+  --z-base: 1;
+  --z-nav: 100;
+  --z-modal: 200;
 }

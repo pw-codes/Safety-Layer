@@ -4,7 +4,7 @@
  * Depends on: nothing (pure SVG generation).
  */
 (function () {
-  'use strict';
+  "use strict";
 
   function buildDiagramSVG() {
     return `
@@ -48,34 +48,26 @@
   <text x="201" y="116" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e8f0fe" font-weight="bold">API</text>
 
   <!-- Arrow 2 -->
-  <line x1="248" y1="105" x2="274" y2="105" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="4,3">
+  <line x1="248" y1="105" x2="262" y2="105" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="4,3">
     <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1s" repeatCount="indefinite" begin="0.3s"/>
   </line>
-  <polygon points="274,101 282,105 274,109" fill="#00e5ff"/>
+  <polygon points="262,101 270,105 262,109" fill="#00e5ff"/>
 
   <!-- Node: AI Model -->
-  <rect x="282" y="80" width="100" height="50" rx="2" fill="#0f1e2e" stroke="#1a2a3a"/>
-  <text x="332" y="100" text-anchor="middle" font-family="monospace" font-size="7" fill="#6b88a4" letter-spacing="1">MODEL</text>
-  <text x="332" y="116" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e8f0fe" font-weight="bold">AI Core</text>
+  <rect x="270" y="80" width="96" height="50" rx="2" fill="#0f1e2e" stroke="#1a2a3a"/>
+  <text x="318" y="100" text-anchor="middle" font-family="monospace" font-size="7" fill="#6b88a4" letter-spacing="1">MODEL</text>
+  <text x="318" y="116" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e8f0fe" font-weight="bold">AI Core</text>
 
   <!-- Vertical arrow -->
-  <line x1="332" y1="132" x2="332" y2="162" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="4,3">
+  <line x1="318" y1="132" x2="318" y2="162" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="4,3">
     <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1s" repeatCount="indefinite" begin="0.6s"/>
   </line>
-  <polygon points="328,162 332,170 336,162" fill="#00e5ff"/>
+  <polygon points="314,162 318,170 322,162" fill="#00e5ff"/>
 
   <!-- Node: Safety Engine -->
-  <rect x="240" y="170" width="180" height="60" rx="2" fill="rgba(0,229,255,0.06)" stroke="#00e5ff" stroke-width="1.5" filter="url(#glow)"/>
-  <text x="330" y="193" text-anchor="middle" font-family="monospace" font-size="7" fill="#00e5ff" letter-spacing="2">SAFETY ENGINE</text>
-  <text x="330" y="212" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#00e5ff" font-weight="bold">Risk Scoring + Filter</text>
-
-  <!-- Risk tier badges -->
-  <rect x="250" y="198" width="44" height="20" rx="1" fill="rgba(57,255,20,0.15)"  stroke="rgba(57,255,20,0.4)"/>
-  <text x="272" y="212" text-anchor="middle" font-family="monospace" font-size="7" fill="#39ff14">SAFE</text>
-  <rect x="302" y="198" width="44" height="20" rx="1" fill="rgba(255,200,0,0.1)"   stroke="rgba(255,200,0,0.3)"/>
-  <text x="324" y="212" text-anchor="middle" font-family="monospace" font-size="7" fill="#ffc800">RISKY</text>
-  <rect x="354" y="198" width="52" height="20" rx="1" fill="rgba(255,77,109,0.15)" stroke="rgba(255,77,109,0.4)"/>
-  <text x="380" y="212" text-anchor="middle" font-family="monospace" font-size="7" fill="#ff4d6d">DANGER</text>
+  <rect x="240" y="170" width="156" height="60" rx="2" fill="rgba(0,229,255,0.06)" stroke="#00e5ff" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="318" y="193" text-anchor="middle" font-family="monospace" font-size="7" fill="#00e5ff" letter-spacing="2">SAFETY ENGINE</text>
+  <text x="318" y="212" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#00e5ff" font-weight="bold">Risk Scoring + Filter</text>
 
   <!-- Arrow left to output -->
   <line x1="238" y1="200" x2="190" y2="200" stroke="#39ff14" stroke-width="1.5" stroke-dasharray="4,3">
@@ -111,10 +103,10 @@
   }
 
   function init() {
-    const container = document.getElementById('heroDiagram');
+    const container = document.getElementById("heroDiagram");
     if (!container) return;
     container.innerHTML = buildDiagramSVG();
   }
 
-  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener("DOMContentLoaded", init);
 })();
